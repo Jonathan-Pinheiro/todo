@@ -10,7 +10,6 @@
 </head>
 <body>
     <header>
-
         <label for="menu-principal">
             <i class="fas fa-bars" id="bar"></i>
         </label>
@@ -25,9 +24,15 @@
 
         <h1>JS NOTES</h1>
 
+        <div>
+            <i class="fas fa-search"></i>
+        
+            <input type="text" id="pesquisar" placeholder="PESQUISE SUA NOTAS">
+        </div>
+
         <input type="checkbox" id="menu-toggle">
         <label for="menu-toggle">
-                <i class="fas fa-caret-down"></i>
+                <i class="fas fa-caret-down" id="seta"></i>
             </label>
             
         <nav>
@@ -40,15 +45,9 @@
     </header>
 
     <main>
-        <div>
-            <i class="fas fa-search"></i>
-        
-            <input type="text" id="pesquisar" placeholder="PESQUISAR">
-        </div>
-
         <section id="formulario">
             <form action="">
-                <fieldset>
+                <fieldset id="coloca-itens">
                     <legend>CADASTRO DE NOTAS</legend>
 
                     <label for="">TÍTULO</label>
@@ -60,6 +59,9 @@
 
                         <label for="item">ITEM</label>
                         <input type="text" id="item">
+
+                        <button type="submit">CADASTRAR</button>
+                        <button type="reset">LIMPAR</button>
                     </fieldset>
                 </fieldset>
             </form>
