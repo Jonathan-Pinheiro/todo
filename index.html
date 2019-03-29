@@ -10,24 +10,27 @@
 </head>
 <body>
     <header>
-        <i class="fas fa-bars" id="bar"></i>
+
+        <label for="menu-principal">
+            <i class="fas fa-bars" id="bar"></i>
+        </label>
+        <input type="checkbox" id="menu-principal">
+
+        <nav id="menu-p">
+            <a href="">INICIO</a>
+            <a href="">NOTAS</a>
+            <a href="">BACKUP</a>
+            <a href="">TAREFAS</a>
+        </nav>
 
         <h1>JS NOTES</h1>
 
-        <div>
-            <i class="fas fa-search"></i>
-
-            <input type="text" id="pesquisar" placeholder="PESQUISAR">
-        </div>
         <input type="checkbox" id="menu-toggle">
         <label for="menu-toggle">
                 <i class="fas fa-caret-down"></i>
             </label>
             
-
         <nav>
-                <i class="fas fa-redo-alt"></i>
-
             <i class="fas fa-eye"></i>
 
             <i class="fas fa-envelope"></i>
@@ -37,6 +40,12 @@
     </header>
 
     <main>
+        <div>
+            <i class="fas fa-search"></i>
+        
+            <input type="text" id="pesquisar" placeholder="PESQUISAR">
+        </div>
+
         <section id="formulario">
             <form action="">
                 <fieldset>
