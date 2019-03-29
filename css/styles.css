@@ -35,10 +35,15 @@ header h1 {
 
 header div input {
     height: 6vh;
-    width: 120px;
-    background-color: #f0aa1e;
+    width: 100px;
+    background-color: #e6a21c;
     border: none;
-    padding-left: 5px;
+    color: white;
+}
+
+header div input::placeholder {
+    color: white;
+    text-align: center;
 }
 
 header label i {
@@ -59,7 +64,7 @@ header label i {
 }
 
 #menu-toggle:checked ~ label i{
-    transform: rotate(180deg);;
+    transform: rotate(180deg);
 }
 
 header nav {
@@ -75,8 +80,8 @@ header nav {
 
     width: 40px; 
 
-    background-color: #f0aa1e;
-    border-radius: 7px;
+    background-color: #ffb521;
+    border-radius: 0 0 7px 7px;
 }
 
 header nav i {
