@@ -71,10 +71,10 @@ header h1 {
 
 header div {
     position: absolute;
-    top: 60px;
+    top: 10%;
+    left: 5%;
 
-    padding-left: auto;
-    padding-right: auto;
+    width: 90%;
 
     background-color: #e29701;
     box-shadow: 0 3px #dbd8d8;
@@ -82,11 +82,13 @@ header div {
 
 header div i {
     padding-left: 8px;
+    width: 10%;
+    margin-right: -4px;
 }
 
 header div input {
     height: 6vh;
-    width: 272px;
+    width: 90%;
     background-color: #e29701;
     border: none;
     color: white;
