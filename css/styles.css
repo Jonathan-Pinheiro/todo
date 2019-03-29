@@ -73,7 +73,8 @@ header div {
     position: absolute;
     top: 60px;
 
-    margin: 0 auto;
+    padding-left: auto;
+    padding-right: auto;
 
     background-color: #e29701;
     box-shadow: 0 3px #dbd8d8;
