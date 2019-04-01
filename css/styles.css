@@ -11,6 +11,7 @@
 
 body {
     font-family: 'oswald-regular';
+    background-color: rgb(235, 235, 235);
 }
 
 /*header*/
@@ -71,13 +72,13 @@ header h1 {
 
 header div {
     position: absolute;
-    top: 10%;
+    top: 11%;
     left: 5%;
 
     width: 90%;
 
     background-color: #e29701;
-    box-shadow: 0 3px #dbd8d8;
+    box-shadow: 0 3px 1px #dbd8d8;
 }
 
 header div i {
@@ -116,6 +117,7 @@ header label i {
 
 #menu-toggle:checked ~ label i{
     transform: rotate(180deg);
+    padding-top: 60%;
 }
 
 #seta {
@@ -152,20 +154,84 @@ main {
     margin: 0 auto;
 }
 
-main div {
-    margin-bottom: 10px;
+#titulos {
+    border-radius: 5px;
+    border: 1px solid rgb(129, 129, 129);
+}
+
+#titulos legend {
+    margin-left: 4%;
+}
+
+#titulos .title {
+    display: block;
+    padding-left: 2%;
+    margin-top: 5px; 
+}
+
+#titulos #titulo {
+    display: block;
+    width: 96%;
+    height: 20px;
+    margin: 10px auto 10px auto;
+    border-radius: 3px;
+    border: 1px solid rgb(129, 129, 129);
+} 
+
+#coloca-itens {
+    display: flex;
+    width: 96%;
+    margin: 2% auto 2% auto;
+    border-radius: 5px;
+    border: 0.5px solid rgb(129, 129, 129);
+}
+
+#coloca-itens legend {
+    margin-left: 4%;
+}
+
+#coloca-itens #add {
+    padding-left: 2%;
+    font-size: 1.3rem;
+}
+
+.itemlabel {
+    display: inline;
+    padding-left: 2%;
+}
+
+#item {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 3px;
+    margin: 0 auto;
+}
+
+.textoitem {
+    width: 90%;
+    border: 0.5px solid rgb(129, 129, 129);
+    border-radius: 3px;
+}
+
+#botoes {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+#coloca-itens button {
+    display: inline-block;
+    padding: 3% 5%;
+    margin: 15px auto 15px auto;
 
     background-color: #ffb521;
-}
-
-main div i {
-    width: 10%;
-    margin-right: -4px;
-}
-
-main div input {
-    width: 90%;
-    margin-right: -4px;
+    border: none;
+    border-radius: 3px;
+    font-weight: 600;
+    color: white;
+    
 }
 
 /*fim main*/

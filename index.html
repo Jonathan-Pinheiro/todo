@@ -27,7 +27,7 @@
         <div>
             <i class="fas fa-search"></i>
         
-            <input type="text" id="pesquisar" placeholder="PESQUISE SUA NOTAS">
+            <input type="text" id="pesquisar" placeholder="PESQUISE SUAS NOTAS">
         </div>
 
         <input type="checkbox" id="menu-toggle">
@@ -47,27 +47,40 @@
     <main>
         <section id="formulario">
             <form action="">
-                <fieldset id="coloca-itens">
+                <fieldset id="titulos">
                     <legend>CADASTRO DE NOTAS</legend>
 
-                    <label for="">TÍTULO</label>
-                    <input type="text">
-                    <fieldset>
+                    <label class="title" for="">TÍTULO</label>
+                    <input id="titulo" type="text">
+                    <fieldset id="coloca-itens">
                         <legend>ITENS</legend>
 
-                        <p>+</p>
-
-                        <label for="item">ITEM</label>
-                        <input type="text" id="item">
-
-                        <button type="submit">CADASTRAR</button>
-                        <button type="reset">LIMPAR</button>
+                        <div id="add">+</div>
+                        
+                            <label class="itemlabel" for="item">ITEM 1</label>
+                        <div id="item">
+                            <input type="text" class="textoitem">
+                            <div id="excluir">-</div>
+                        </div>
+                        
+                        <div id="botoes">
+                            <button type="submit">CADASTRAR</button>
+                            <button type="reset">LIMPAR</button>
+                        </div>
+                        
                     </fieldset>
                 </fieldset>
             </form>
         </section>
         
         <section id="notas">
+            <div>
+                <h2>Título da Lista</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quos animi sit recusandae molestias iste, veritatis ab,
+                    debitis nisi neque quo harum commodi et. Consequuntur
+                    aliquam inventore suscipit, impedit vitae architecto.</p>
+            </div>
 
         </section>
     </main>
