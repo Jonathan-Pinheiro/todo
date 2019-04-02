@@ -19,18 +19,17 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-
+    align-items: center;
     padding-left: 10px;
     padding-right: 10px;
-    height: 14vh;
+    height: 10vh;
     background-color: #ffb521;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
     
 }
 
 #bar {
     font-size: 1.8rem;
-    padding-top: 60%;
 }
 
 #menu-principal {
@@ -66,13 +65,12 @@ header nav a {
 }
 
 header h1 {
-    padding-top: 1.4%;
     font-size: 2rem;
 }
 
 header div {
     position: absolute;
-    top: 11%;
+    top: 13%;
     left: 5%;
 
     width: 90%;
@@ -117,11 +115,6 @@ header label i {
 
 #menu-toggle:checked ~ label i{
     transform: rotate(180deg);
-    padding-top: 60%;
-}
-
-#seta {
-    padding-top: 60%;
 }
 
 header nav {
@@ -163,20 +156,18 @@ main {
     margin-left: 4%;
 }
 
-#titulos .title {
-    display: block;
-    padding-left: 2%;
-    margin-top: 5px; 
-}
-
 #titulos #titulo {
     display: block;
     width: 96%;
-    height: 20px;
+    height: 30px;
     margin: 10px auto 10px auto;
     border-radius: 3px;
     border: 1px solid rgb(129, 129, 129);
-} 
+}
+
+#titulos #titulo::placeholder {
+    padding-left: 5px;
+}
 
 #coloca-itens {
     display: flex;
@@ -209,8 +200,17 @@ main {
 
 .textoitem {
     width: 90%;
+    height: 30px;
     border: 0.5px solid rgb(129, 129, 129);
     border-radius: 3px;
+}
+
+.textoitem::placeholder {
+    padding-left: 5px;
+}
+
+#item #excluir {
+    margin-right: 5px;
 }
 
 #botoes {
@@ -218,7 +218,6 @@ main {
     justify-content: space-between;
     width: 80%;
     margin: 0 auto;
-
 }
 
 #coloca-itens button {
@@ -234,4 +233,51 @@ main {
     
 }
 
+#notas .notasfinais {
+    background-color: #a9feec;
+    padding: 10px;
+    margin: 10px 0 10px 0;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgb(156, 156, 156);
+}
+
+.notasfinais p {
+    color: rgb(129, 129, 129);
+    margin-top: 10px;
+}
+
+.notasfinais .icones {
+    margin: 10px;
+    text-align: right;
+    font-size: 1.3rem;
+}
+
+.notasfinais .icones i {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#notas .notasfinais1 {
+    background-color: #fefc93;
+    padding: 10px;
+    margin: 20px 0 10px 0;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgb(156, 156, 156);
+}
+
+.notasfinais1 p {
+    color: rgb(129, 129, 129);
+    margin-top: 10px;
+}
+
+.notasfinais1 .icones {
+    margin: 10px;
+    text-align: right;
+    font-size: 1.3rem;
+}
+
+.notasfinais1 .icones i {
+    padding-left: 5px;
+    padding-right: 5px;
+}
 /*fim main*/
