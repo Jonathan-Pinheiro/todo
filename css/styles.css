@@ -14,6 +14,8 @@ body {
     background-color: rgb(235, 235, 235);
 }
 
+/*Mobile*/
+
 /*header*/
 
 header {
@@ -233,12 +235,28 @@ main {
     
 }
 
-#notas .notasfinais {
+section#notas article:nth-child(odd) {
+    background-color: #fefc93;
+    padding: 10px;
+    margin: 10px 0 10px 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px rgb(156, 156, 156);
+    transition: margin-top 0.3s, margin-left 0.3s;
+}
+
+section#notas article:nth-child(even) {
     background-color: #a9feec;
     padding: 10px;
     margin: 10px 0 10px 0;
     border-radius: 5px;
-    box-shadow: 3px 3px 3px rgb(156, 156, 156);
+    box-shadow: 2px 2px 3px rgb(156, 156, 156);
+    transition: margin-top 0.3s, margin-left 0.3s;
+}
+
+section#notas article:hover {
+    box-shadow: 4px 4px 3px rgb(156, 156, 156);
+    margin-top: 5px;
+    margin-left: 3px;
 }
 
 .notasfinais p {
@@ -256,28 +274,20 @@ main {
     padding-left: 5px;
     padding-right: 5px;
 }
-
-#notas .notasfinais1 {
-    background-color: #fefc93;
-    padding: 10px;
-    margin: 20px 0 10px 0;
-    border-radius: 5px;
-    box-shadow: 3px 3px 3px rgb(156, 156, 156);
-}
-
-.notasfinais1 p {
-    color: rgb(129, 129, 129);
-    margin-top: 10px;
-}
-
-.notasfinais1 .icones {
-    margin: 10px;
-    text-align: right;
-    font-size: 1.3rem;
-}
-
-.notasfinais1 .icones i {
-    padding-left: 5px;
-    padding-right: 5px;
-}
 /*fim main*/
+
+/*Tablets*/
+
+@media screen and (min-width: 768px) {
+    header {
+        margin-bottom: 120px;
+    }
+
+    #menu-p {
+        top: 102px;
+    }
+
+    #menu-toggle:checked ~ nav{
+        top: 102px;
+    }
+}
